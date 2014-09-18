@@ -1,0 +1,56 @@
+#shape
+
+new filled
+out clBlack
+in clRed
+points
+100,100,100
+100,100,200
+100,200,200
+100,200,100
+
+new filled
+out clBlack
+in clGreen
+points
+200,100,100
+200,100,200
+200,200,200
+200,200,100
+
+new filled
+out clBlack
+in clBlue
+points
+100,100,100
+100,200,100
+200,200,100
+200,100,100
+
+new filled
+out clBlack
+in clYellow
+points
+100,100,200
+100,200,200
+200,200,200
+200,100,200
+
+new filled
+out clBlack
+in clBlack
+points
+100,100,100
+100,100,200
+200,100,200
+200,100,100
+
+new filled
+out clBlack
+in clBlack
+points
+100,200,100
+100,200,200
+200,200,200
+200,200,100
+

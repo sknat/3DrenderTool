@@ -1,0 +1,18 @@
+#shape
+
+const
+
+declare
+
+for i=1 to 50
+
+new /f
+in $00aaaaaa
+points
+100,100,10*i
+100,200,10*i
+200,200,10*i
+200,100,10*i
+
+end
+

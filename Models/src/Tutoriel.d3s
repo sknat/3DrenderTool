@@ -1,0 +1,90 @@
+#shape
+
+Ceci est un exemple du tutoriel
+
+Tout modèle 3D, soit toute structure de l'espace
+est déclarée en première ligne par 
+- #shape pour un ensemble de polygones
+- #poly pour un seul polygone
+
+entre les mots clés 'c onst' et 'declare' peuvent être
+déclarées des variables (entiers et couleurs), 
+réutilisables par la suite.
+
+const
+
+MonEntier = 45
+
+une couleur en code hexadécimal
+MaCouleur = $00aaaaaa
+
+...ou désignée par un nom de couleur delphi
+MonAutreCouleur = clblue
+
+attention, la casse doit être respectée.
+
+declare
+
+maintenant on passe à la déclaration des 
+polygones
+
+new /f
+ici new introduit un polygone, et /f si il est 
+présent indique que le polygone sera plein.
+
+après in est définie la couleur interieure du 
+polygone, ( utilisée uniquement si /f suit new )
+après out est définie la couleur exterieure du 
+polygone (bord)
+
+in MaCouleur
+out clblue
+
+s'ils ne sont pas spécifiés, la couleur par défaut est
+clblack
+
+puis le plus important, on liste les points
+sous la forme, ligne par ligne de couples 
+x,y,z ( les opérations +,*,-,/ étant autorisées)
+
+points
+100,100,100
+100,200,100
+200,200,100
+200,100,100
+
+puis de même pour les polygones suivants
+
+Des boucles for sont également possibles selon la
+syntaxe :
+. for <nom de variable> = <valeur> to <valeur>
+.
+. <instructions>
+.  
+<nom de variable> peut alors être utilisé comme
+une variable déclarée par l'utilisateur
+. end
+les instructions à l'intérieur de la boucle étant ainsi
+répétées.
+
+Par exemple:
+for i = 1 to 50
+
+new /f
+in MaCouleur
+points
+100,100,100+10*i
+100,200,100+10*i
+200,200,100+10*i
+200,100,100+10*i
+
+end
+
+et on obtient une jolie pile de carrés
+
+
+Les polygones sont déclarés de la même manière 
+si ce n'est que
+- seul les points associés au premier new sont pris 
+en compte.
+- on remplace #shape par #poly

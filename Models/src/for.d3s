@@ -1,0 +1,21 @@
+#shape
+
+const
+nb = 3
+declare
+
+for i=1 to nb
+for k=1 to nb
+for l=1 to nb
+
+new /f
+in $00aaaaaa
+points
+100+200*l,100+200*k,100*i
+100+200*l,200+200*k,100*i
+200+200*l,200+200*k,100*i
+200+200*l,100+200*k,100*i
+
+end
+end
+end
