@@ -1,4 +1,4 @@
-Delphi 3D Render tool
+3D Render tool - Delphi Pascal Project
 =========
 
 This is an old delphi project that I did in highschool,
@@ -8,6 +8,8 @@ This is an old delphi project that I did in highschool,
 * Models contains 3D models.
 * Launcher, a dropdown list allowing you to launch other projects. (Doesn't work very well)
 * Games are still under developpement (Highschool is far :D)
+
+The repo contains binaries as I don't know how long Borland Delphi will still be available.
 
 Licence
 =======
