@@ -1,13 +1,22 @@
-Delphi 3D
+Delphi 3D Render tool
+=========
 
-Voilà mon projet, qui reste encore et toujours en développement.
+This is an old delphi project that I did in highschool,
 
- - Dans Moteur se trouve l'unité principale (d3d.pas) ainsi qu'un projet simple (simplement pour les tests)
- - Dans ModelsEdit le projet 'central', l'éditeur de formes 3d, qui seront stockées dans Models
- - Dans Models : les modèles d3d
- - Dans launcher, un petit projet de menu déroulant avec des boutons permettant de Lancer les autres projets.
- - Les jeux sont encore en développement...
+* Moteur contains the principal unit (d3d.pas) and a simple project (only for tests)
+* ModelsEdit is the core project, the 3D shape editor who are stored in Models.
+* Models contains 3D models.
+* Launcher, a dropdown list allowing you to launch other projects. (Doesn't work very well)
+* Games are still under developpement (Highschool is far :D)
+
+Licence
+=======
+This software is distributed under GPL3 licence.
+Original Author is Nathan Skrzypczak
+
  
- Principaux problèmes encore non résolus :
-	- un rendu 'véritable' avec des perspectives moins déformées qu'actuellement
-	- la gestion du recouvrement / des formes situées derrière la camera -> création d'une classe enfante de Tcanvas.
+Issues
+======
+* A real rendering algorithm because the one used actually deforms perspectives
+* Handling forms behind camera -> create child class from Tcanvas 
+
